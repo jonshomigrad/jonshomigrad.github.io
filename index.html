@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jon's Homigrad</title>
+  <link rel="icon" href="fav.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: 'Nunito', sans-serif;
+      background-color: rgb(26, 26, 26);
+    }
+
+    ::selection, ::-moz-selection,
+    h1::selection, h2::selection, h3::selection,
+    p::selection, span::selection, a::selection, div::selection,
+    h1::-moz-selection, h2::-moz-selection, h3::-moz-selection,
+    p::-moz-selection, span::-moz-selection, a::-moz-selection, div::-moz-selection {
+      background-color: rgba(0, 0, 0, 0.7) !important;
+      color: white !important;
+      -webkit-text-fill-color: white !important;
+      background-clip: unset !important;
+      -webkit-background-clip: unset !important;
+    }
+
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #222222;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #222222;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #222222;
+    }
+
+    header {
+      background: linear-gradient(90deg, #111, #222);
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    nav a {
+      margin-left: 1em;
+      color: #32cd32;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 86%;
+      margin:1em auto;
+      padding: 1em;
+      background: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      margin: 0em 0 0.5em;
+      color: #32cd32;
+    }
+
+    ul, ol {
+      padding-left: 2em;
+      margin-bottom: 1em;
+    }
+
+    p, li {
+      margin: 0.5em 0;
+      line-height: 1.5;
+      color: #eee;
+    }
+
+    code {
+      background: #333;
+      padding: 0.2em 0.4em;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(90deg, #111, #222);
+      padding: 0.5em;
+      text-align: center;
+      font-size: 0.8em;
+      color: #aaa;
+    }
+
+    details {
+      margin-bottom: 1em;
+    }
+    summary {
+      color: #ffffff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    summary:hover {
+      color: #32cd32;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jon's Homigrad</h1>
+    <nav>
+      <a href="https://discord.gg/PnGTMmHQEA" target="_blank">Join our Discord</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Rules</h2>
+      <ol>
+        <li><strong>No RK-ing or TK-ing</strong><br>Don’t kill your teammates or other people unless you're certain they’re a traitor.</li>
+        <li><strong>No Hate Speech</strong><br>Don’t be homophobic, racist, etc.</li>
+        <li><strong>No Mic Spam</strong><br>Don’t be loud or annoying with soundboards.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>General Controls</h2>
+      <div>
+        <p><strong>Hand to Hand Combat</strong></p>
+        <ul>
+          <li>LMB once to enter combat.</li>
+          <li>In combat, press LMB to punch. Hold RMB to block.</li>
+          <li>Press R to exit combat.</li>
+        </ul>
+        <p><strong>Checking Bodies</strong></p>
+        <ul>
+          <li>Hold RMB to hold a ragdoll.</li>
+          <li>While holding RMB, press E to check inventory. Press R to check pulse.</li>
+        </ul>
+        <p><strong>Ragdoll Controls</strong></p>
+        <ul>
+          <li>LMB: reach out with left hand.</li>
+          <li>RMB: reach out with right hand.</li>
+          <li>Hold E to look with your head.</li>
+          <li>Left Shift: grab with left hand.</li>
+          <li>Left Alt: grab with right hand.</li>
+          <li>WASD to move while grabbing.</li>
+          <li>Alternate hands while holding W to climb.</li>
+          <li>Use guns in ragdoll: RMB to aim, LMB to shoot.</li>
+        </ul>
+        <p><strong>How to ragdoll/unragdoll</strong></p>
+        <ul>
+          <li>Press `~` to open console.</li>
+          <li>Type: bind [key] fake</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Recommended Binds</h2>
+      <ul>
+        <li><code>bind g fake</code> - Ragdoll bind.</li>
+        <li><code>bind k suicide</code> - Aim at yourself.</li>
+        <li><code>bind o vomit</code> - Puke blood (just for fun).</li>
+        <li><code>bind h "say *drop"</code> - Throw an item.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>FAQ</h2>
+      <details>
+        <summary>Q. Is there a way to donate?</summary>
+        <p>A. We do not accept money. We believe in fair play and no pay-to-win.</p>
+      </details>
+      <details>
+        <summary>Q. Can I submit mods or features to the devs?</summary>
+        <p>A. Yes! Submit mods, ideas, and chat with others on our <a href="https://discord.gg/PnGTMmHQEA" style="color:#32cd32">Discord</a>.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Jon's Homigrad. All rights reserved.
+  </footer>
+</body>
+</html>
